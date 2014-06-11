@@ -1,0 +1,12 @@
+INPUT(
+./debug\illus.o
+./debug\loading.o
+./debug\login.o
+./debug\main.o
+./debug\yyf.o
+./debug\qrc_yyf.o
+./debug\moc_illus.o
+./debug\moc_loading.o
+./debug\moc_login.o
+./debug\moc_yyf.o
+);

@@ -1,0 +1,17 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>yyf.jpg</file>
+        <file>qian.jpg</file>
+        <file>yun.jpg</file>
+        <file>an.jpg</file>
+        <file>xue.jpg</file>
+        <file>tu.jpg</file>
+        <file>w.jpg</file>
+        <file>dddd.jpg</file>
+        <file>succ1.jpg</file>
+        <file>64.png</file>
+        <file>3.png</file>
+        <file>uss.jpeg</file>
+        <file>123.jpg</file>
+    </qresource>
+</RCC>

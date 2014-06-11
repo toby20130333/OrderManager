@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/new/prefix1">
+        <file>src/Bin II.png</file>
+        <file>src/cholesterol (to eat).ico</file>
+        <file>src/Cholesterol (to eat).png</file>
+        <file>src/Coin256.png</file>
+        <file>src/FilesFolder256.png</file>
+        <file>src/PaperMoney256.png</file>
+        <file>src/金融金钱类图标下载4.png</file>
+        <file>src/金融金钱类图标下载10.png</file>
+        <file>src/154433321.jpg</file>
+        <file>src/20080519102858585.jpg</file>
+        <file>src/20087417153357_2.jpg</file>
+        <file>src/厨房信息.png</file>
+        <file>src/桌号.png</file>
+        <file>src/桌子.png</file>
+        <file>src/金额.png</file>
+    </qresource>
+</RCC>
