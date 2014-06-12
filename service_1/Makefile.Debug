@@ -112,12 +112,12 @@ compiler_rcc_make_all: debug/qrc_src.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) debug\qrc_src.cpp
 debug/qrc_src.cpp: src.qrc \
-		src/PaperMoney256.png \
-		src/20080519102858585.jpg \
-		src/FilesFolder256.png \
 		src/20087417153357_2.jpg \
+		src/Coin256.png \
+		src/20080519102858585.jpg \
 		src/154433321.jpg \
-		src/Coin256.png
+		src/FilesFolder256.png \
+		src/PaperMoney256.png
 	C:\Qt\Qt5.3.0\5.3\mingw482_32\bin\rcc.exe -name src src.qrc -o debug\qrc_src.cpp
 
 compiler_moc_header_make_all: debug/moc_server.cpp debug/moc_caidan.cpp
@@ -246,7 +246,7 @@ debug/moc_server.cpp: C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/QMainWindo
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtSql/qsqltablemodel.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/QList \
 		server.h
-	C:\Qt\Qt5.3.0\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.3.0/5.3/mingw482_32/mkspecs/win32-g++ -ID:/TobyYi/yibansvn/YbTestDemo/service_1 -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtSql -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtNetwork -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore server.h -o debug\moc_server.cpp
+	C:\Qt\Qt5.3.0\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.3.0/5.3/mingw482_32/mkspecs/win32-g++ -ID:/TobyYi/yibansvn/github-project/OrderManager/service_1 -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtSql -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtNetwork -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore server.h -o debug\moc_server.cpp
 
 debug/moc_caidan.cpp: C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/QDialog \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/qdialog.h \
@@ -356,7 +356,7 @@ debug/moc_caidan.cpp: C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/QDialog \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtSql/qsqlquerymodel.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/qabstractitemmodel.h \
 		caidan.h
-	C:\Qt\Qt5.3.0\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.3.0/5.3/mingw482_32/mkspecs/win32-g++ -ID:/TobyYi/yibansvn/YbTestDemo/service_1 -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtSql -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtNetwork -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore caidan.h -o debug\moc_caidan.cpp
+	C:\Qt\Qt5.3.0\5.3\mingw482_32\bin\moc.exe $(DEFINES) -D__GNUC__ -DWIN32 -IC:/Qt/Qt5.3.0/5.3/mingw482_32/mkspecs/win32-g++ -ID:/TobyYi/yibansvn/github-project/OrderManager/service_1 -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtSql -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtNetwork -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui -IC:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore caidan.h -o debug\moc_caidan.cpp
 
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
@@ -493,6 +493,7 @@ debug/main.o: main.cpp C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/QApplicat
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtWidgets/qsplashscreen.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtGui/QPixmap \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/QString \
+		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtCore/QDebug \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtSql/QSqlDatabase \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtSql/qsqldatabase.h \
 		C:/Qt/Qt5.3.0/5.3/mingw482_32/include/QtSql/qsql.h \

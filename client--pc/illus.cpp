@@ -7,7 +7,7 @@ illus::illus(QWidget *parent) :
     ui(new Ui::illus)
 {
     ui->setupUi(this);
-//    this->setWindowFlags(Qt::FramelessWindowHint);         //删除标题栏
+    this->setWindowFlags(Qt::FramelessWindowHint);         //删除标题栏
     qDebug()<<"illus::illus--------------> ";
 }
 

@@ -20,7 +20,7 @@ server::server(QWidget *parent) :
     ui(new Ui::server)
 {
     ui->setupUi(this);
-    startTimer(5000);
+    startTimer(1000);
     sev =new QTcpServer(this);
     sev->listen(QHostAddress::Any,9999);
     QObject::connect(sev,SIGNAL(newConnection()),this ,SLOT(newClientCom()));

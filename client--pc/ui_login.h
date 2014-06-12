@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'login.ui'
 **
-** Created by: Qt User Interface Compiler version 5.2.1
+** Created by: Qt User Interface Compiler version 5.3.0
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -120,10 +120,10 @@ public:
         spinBox->setGeometry(QRect(20, 440, 81, 31));
         spinBox_2 = new QSpinBox(ts);
         spinBox_2->setObjectName(QStringLiteral("spinBox_2"));
-        spinBox_2->setGeometry(QRect(230, 440, 81, 31));
+        spinBox_2->setGeometry(QRect(120, 440, 81, 31));
         spinBox_3 = new QSpinBox(ts);
         spinBox_3->setObjectName(QStringLiteral("spinBox_3"));
-        spinBox_3->setGeometry(QRect(130, 440, 81, 31));
+        spinBox_3->setGeometry(QRect(230, 440, 81, 31));
         tabWidget->addTab(ts, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
@@ -280,7 +280,7 @@ public:
 
         retranslateUi(login);
 
-        tabWidget->setCurrentIndex(2);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(login);

@@ -123,7 +123,7 @@ color: rgb(85, 0, 255);</string>
      <widget class="QSpinBox" name="spinBox_2">
       <property name="geometry">
        <rect>
-        <x>230</x>
+        <x>120</x>
         <y>440</y>
         <width>81</width>
         <height>31</height>
@@ -133,7 +133,7 @@ color: rgb(85, 0, 255);</string>
      <widget class="QSpinBox" name="spinBox_3">
       <property name="geometry">
        <rect>
-        <x>130</x>
+        <x>230</x>
         <y>440</y>
         <width>81</width>
         <height>31</height>

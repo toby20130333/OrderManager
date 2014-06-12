@@ -7,8 +7,8 @@ loading::loading(QWidget *parent) :
     ui(new Ui::loading)
 {
     ui->setupUi(this);
-//    this->setWindowFlags(Qt::FramelessWindowHint);         //删除标题栏
-//    this->setWindowOpacity(0.7);
+    this->setWindowFlags(Qt::FramelessWindowHint);         //删除标题栏
+    this->setWindowOpacity(0.9);
     ui->tableView->setEditTriggers(0);                    //设置tableview在外面不可以改变
     //ui->pushButton->setStyleSheet("border:2px groove gray;border-radius:10px;padding:2px 4px;"); //设置属性为圆角
 

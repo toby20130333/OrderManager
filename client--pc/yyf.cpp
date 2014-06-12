@@ -60,7 +60,7 @@ void yyf::setValue()
                     result +="\n";
                     qDebug()<<" yyf::query "<<result;
                     ui->textEdit->append(result);
-                    break;
+                    continue;
                 }
             }
         }

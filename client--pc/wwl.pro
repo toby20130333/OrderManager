@@ -16,7 +16,10 @@ greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 HEADERS += illus.h loading.h login.h ui_dshow.h ui_explain.h yyf.h
 FORMS += illus.ui loading.ui login.ui yyf.ui
 SOURCES += illus.cpp loading.cpp login.cpp main.cpp yyf.cpp
-RESOURCES += yyf.qrc
+#RESOURCES += yyf.qrc
 #INCLUDEPATH += D:\TobyYi\yibansvn\thrd-part\mysql-5.5.38-win32\include
 
 #LIBS += D:\TobyYi\yibansvn\thrd-part\mysql-5.5.38-win32\lib\libmysql.lib
+
+RESOURCES += \
+    yyf.qrc
