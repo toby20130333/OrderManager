@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/">
+        <file>EightGame.qml</file>
+        <file>GameGuide.qml</file>
+        <file>GameGuideMain.qml</file>
+        <file>gameMainUi.qml</file>
+        <file>GameNextUI.qml</file>
+        <file>GameRomView.qml</file>
+        <file>GameThirdUI.qml</file>
+        <file>GameView.qml</file>
+        <file>fileno.txt</file>
+        <file>GameErrorTxt.qml</file>
+        <file>GameTips.qml</file>
+    </qresource>
+</RCC>

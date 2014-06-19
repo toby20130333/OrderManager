@@ -1,0 +1,27 @@
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\gen\org\qtproject\dtuandui\R.java \
+ : D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\drawable-hdpi\icon.png \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\drawable-ldpi\icon.png \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\drawable-mdpi\icon.png \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\layout\splash.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values\libs.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-de\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-el\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-es\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-et\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-fa\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-fr\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-id\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-it\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-ja\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-ms\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-nb\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-nl\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-pl\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-pt-rBR\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-ro\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-rs\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-ru\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-zh-rCN\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\res\values-zh-rTW\strings.xml \
+D:\TobyYi\yibansvn\github-project\OrderManager\QuickViewTest\android-build\bin\AndroidManifest.xml \

@@ -6,7 +6,7 @@ MyQuickView::MyQuickView(QQuickView *parent) :
     isHide = false;
     canmove = false;
     isHasMouseEvent = true;
-    setSource(QUrl("myquickimage.qml"));
+    setSource(QUrl("gameMainUi.qml"));
     this->setFlags(Qt::FramelessWindowHint |Qt::WindowStaysOnTopHint);
     iHeight = this->height();
 }
@@ -30,7 +30,7 @@ void MyQuickView::slotFinishedAnimation1()
 
 void MyQuickView::slotFinishedAnimation2()
 {
-    qDebug()<<"slotFinishedAnimation2  "<<endl;
+    //qDebug()<<"slotFinishedAnimation2  "<<endl;
     isHide =true;
     finishedhideAni = true;
     delete group3;
@@ -43,7 +43,7 @@ void MyQuickView::slotFinishedAnimation2()
 
 void MyQuickView::mouseReleaseEvent(QMouseEvent *e)
 {
-    qDebug()<<"mouseReleaseEvent  "<<endl;
+    //qDebug()<<"mouseReleaseEvent  "<<endl;
     if(e->button() == Qt::LeftButton) {
         canmove = false;
     }
@@ -55,7 +55,7 @@ void MyQuickView::mousePressEvent(QMouseEvent *e)
     qDebug()<<"MouseButtonPress  "<<endl;
     if( (e->pos().x()>= 20) && (e->pos().y()<=55) && (e->pos().x()<= this->width()-10))
     {
-        qDebug()<<"set moving status..........";
+        //qDebug()<<"set moving status..........";
         canmove = true;
     }
     else
@@ -74,7 +74,7 @@ void MyQuickView::mouseMoveEvent(QMouseEvent *e)
 {
     if(canmove)
     {
-        qDebug()<<"is moveing..........";
+        //qDebug()<<"is moveing..........";
         setPosition(e->globalPos() - oldPos);
         QQuickView::mouseMoveEvent(e);
     }
@@ -88,7 +88,7 @@ bool MyQuickView::event(QEvent *e)
     switch (e->type()) {
     case QEvent::Enter:
     {
-        qDebug()<<"Enter  "<<isHide<<" "<<finishedshowAni;
+        //qDebug()<<"Enter  "<<isHide<<" "<<finishedshowAni;
 
         if(!isHasMouseEvent){
             e->ignore();
@@ -97,7 +97,7 @@ bool MyQuickView::event(QEvent *e)
         if(isHide && finishedshowAni)
         {
             finishedshowAni = false;
-            qDebug()<<"QEvent::Enter in it  "<<this->width()<<"\n"<<this->height();
+            //qDebug()<<"QEvent::Enter in it  "<<this->width()<<"\n"<<this->height();
             group2 = new QParallelAnimationGroup;
             connect(group2,SIGNAL(finished()),this,SLOT(slotFinishedAnimation1()));
             QPropertyAnimation *animation = new QPropertyAnimation(this, "height");
@@ -119,7 +119,7 @@ bool MyQuickView::event(QEvent *e)
     }break;
     case QEvent::Leave:
     {
-        qDebug()<<"Leave  "<<!isHide<<finishedhideAni;
+        //qDebug()<<"Leave  "<<!isHide<<finishedhideAni;
         if(!isHasMouseEvent){e->ignore();return true;}
         if(this->position().y() <=0 && !isHide &&finishedhideAni)
         {

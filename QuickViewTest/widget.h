@@ -2,6 +2,9 @@
 #define WIDGET_H
 
 #include <QWidget>
+#include <QImage>
+#include <QLabel>
+#include <QPainter>
 
 class Widget : public QWidget
 {
@@ -10,6 +13,8 @@ class Widget : public QWidget
 public:
     Widget(QWidget *parent = 0);
     ~Widget();
+    QLabel* imgLb;
+    QImage createImageWithOverlay(const QImage& baseImage, const QImage& overlayImage);
 };
 
 #endif // WIDGET_H
