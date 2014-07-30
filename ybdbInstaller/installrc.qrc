@@ -1,0 +1,40 @@
+<RCC>
+    <qresource prefix="/">
+        <file>bg_installer.png</file>
+        <file>close_login_n.png</file>
+        <file>close_login_p.png</file>
+        <file>logo.png</file>
+        <file>min_login_n.png</file>
+        <file>min_login_p.png</file>
+        <file>jinglei.FON</file>
+        <file>loading_progress.png</file>
+        <file>loading_progress.pngx.png</file>
+        <file>app_icon.ico</file>
+        <file>background1.png</file>
+        <file>background2.png</file>
+        <file>computer.png</file>
+        <file>install_d.png</file>
+        <file>install_h.png</file>
+        <file>install_p.png</file>
+        <file>storage_d.png</file>
+        <file>storage_h.png</file>
+        <file>storage_p.png</file>
+        <file>close_login_h.png</file>
+        <file>minimize_d.png</file>
+        <file>minimize_h.png</file>
+        <file>minimize_p.png</file>
+        <file>cd_h.png</file>
+        <file>cd_n.png</file>
+        <file>cd_p.png</file>
+        <file>HELVETICANEUELTPRO-THEX.OTF</file>
+        <file>run_d.png</file>
+        <file>run_h.png</file>
+        <file>run_p.png</file>
+        <file>no_d.png</file>
+        <file>no_h.png</file>
+        <file>no_p.png</file>
+        <file>yes_d.png</file>
+        <file>yes_h.png</file>
+        <file>yes_p.png</file>
+    </qresource>
+</RCC>

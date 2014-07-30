@@ -15,10 +15,10 @@ CXX           = D:\AndroidForQt\android-ndk-r9b/toolchains/arm-linux-androideabi
 DEFINES       = -DQT_QML_DEBUG -DQT_DECLARATIVE_DEBUG -DQT_QUICK_LIB -DQT_QML_LIB -DQT_WIDGETS_LIB -DQT_NETWORK_LIB -DQT_GUI_LIB -DQT_CORE_LIB
 CFLAGS        = -Wno-psabi -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -ffunction-sections -funwind-tables -fstack-protector -fno-short-enums -DANDROID -Wa,--noexecstack -g -gdwarf-2 -marm -O0 -fno-omit-frame-pointer -Wall -Wno-psabi -W -D_REENTRANT -fPIE $(DEFINES)
 CXXFLAGS      = -Wno-psabi -march=armv7-a -mfloat-abi=softfp -mfpu=vfp -ffunction-sections -funwind-tables -fstack-protector -fno-short-enums -DANDROID -Wa,--noexecstack -std=gnu++0x -g -g -gdwarf-2 -marm -O0 -fno-omit-frame-pointer -Wall -Wno-psabi -W -D_REENTRANT -fPIE $(DEFINES)
-INCPATH       = -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\mkspecs\android-g++ -I. -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtQuick -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtQml -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtWidgets -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtNetwork -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore -I. -I..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include -I..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include -I..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include
+INCPATH       = -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\mkspecs\android-g++ -I. -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtQuick -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtQml -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtWidgets -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtNetwork -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui -IC:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore -I. -I..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include -I..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include -I..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include
 LINK          = D:\AndroidForQt\android-ndk-r9b/toolchains/arm-linux-androideabi-4.8/prebuilt/windows-x86_64/bin/arm-linux-androideabi-g++
-LFLAGS        = --sysroot=D:\AndroidForQt\android-ndk-r9b/platforms/android-18/arch-arm/ -Wl,-soname,libEightGame.so -Wl,--no-undefined -Wl,-z,noexecstack -shared
-LIBS          = $(SUBLIBS) -LD:\AndroidForQt\android-ndk-r9b/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a -LD:\AndroidForQt\android-ndk-r9b/platforms/android-18/arch-arm//usr/lib -LC:\Qt\Qt5.2.1\5.2.1\android_armv7\lib -lQt5Quick -Lc:\Utils\android\ndk/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a -Lc:\Utils\android\ndk/platforms/android-9/arch-arm//usr/lib -LC:\Utils\icu32_51_1_mingw48\lib -LC:\utils\postgresql\pgsql\lib -LC:\utils\mysql\mysql\lib -LC:\Utils\pgsql\lib -LC:\temp\opensll-android-master\openssl-android-master\lib -LC:\Qt\Qt5.2.1\5.2.1\android_armv7/lib -lQt5Qml -lQt5Widgets -lQt5Network -lQt5Gui -lQt5Core -lGLESv2 -lgnustl_shared -llog -lz -lm -ldl -lc -lgcc
+LFLAGS        = --sysroot=D:\AndroidForQt\android-ndk-r9b/platforms/android-9/arch-arm/ -Wl,-soname,libEightGame.so -Wl,--no-undefined -Wl,-z,noexecstack -shared
+LIBS          = $(SUBLIBS) -LD:\AndroidForQt\android-ndk-r9b/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a -LD:\AndroidForQt\android-ndk-r9b/platforms/android-9/arch-arm//usr/lib -LC:\Qt\Qt5.2.1\5.2.1\android_armv7\lib -lQt5Quick -Lc:\Utils\android\ndk/sources/cxx-stl/gnu-libstdc++/4.8/libs/armeabi-v7a -Lc:\Utils\android\ndk/platforms/android-9/arch-arm//usr/lib -LC:\Utils\icu32_51_1_mingw48\lib -LC:\utils\postgresql\pgsql\lib -LC:\utils\mysql\mysql\lib -LC:\Utils\pgsql\lib -LC:\temp\opensll-android-master\openssl-android-master\lib -LC:\Qt\Qt5.2.1\5.2.1\android_armv7/lib -lQt5Qml -lQt5Widgets -lQt5Network -lQt5Gui -lQt5Core -lGLESv2 -lgnustl_shared -llog -lz -lm -ldl -lc -lgcc
 AR            = D:\AndroidForQt\android-ndk-r9b/toolchains/arm-linux-androideabi-4.8/prebuilt/windows-x86_64/bin/arm-linux-androideabi-ar cqs
 RANLIB        = D:\AndroidForQt\android-ndk-r9b/toolchains/arm-linux-androideabi-4.8/prebuilt/windows-x86_64/bin/arm-linux-androideabi-ranlib
 QMAKE         = C:\Qt\Qt5.2.1\5.2.1\android_armv7\bin\qmake.exe
@@ -426,17 +426,17 @@ compiler_rcc_make_all: qrc_eightrc.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) qrc_eightrc.cpp
 qrc_eightrc.cpp: eightrc.qrc \
-		GameView.qml \
-		EightGame.qml \
-		GameErrorTxt.qml \
-		GameThirdUI.qml \
-		GameGuide.qml \
+		GameRomView.qml \
 		GameGuideMain.qml \
 		fileno.txt \
-		gameMainUi.qml \
+		GameTips.qml \
+		EightGame.qml \
+		GameView.qml \
+		GameGuide.qml \
 		GameNextUI.qml \
-		GameRomView.qml \
-		GameTips.qml
+		gameMainUi.qml \
+		GameErrorTxt.qml \
+		GameThirdUI.qml
 	C:\Qt\Qt5.2.1\5.2.1\android_armv7\bin\rcc.exe -name eightrc eightrc.qrc -o qrc_eightrc.cpp
 
 compiler_moc_header_make_all: moc_widget.cpp moc_myquickview.cpp moc_fileio.cpp
@@ -492,31 +492,31 @@ moc_widget.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtWidgets\QWidget \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\parallel.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compiletime_settings.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdio \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdio.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs_elf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\android\api-level.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdint.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_wchar_limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\stddef.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\compiler.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\kernel.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysmacros.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdio.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs_elf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\android\api-level.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdint.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_wchar_limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\stddef.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\compiler.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\kernel.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysmacros.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\types.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdlib \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdlib.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\string.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\malloc.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\alloca.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\strings.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\memory.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdlib.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\string.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\malloc.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\alloca.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\strings.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\memory.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\limits \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\tr1\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\tags.h \
@@ -524,9 +524,9 @@ moc_widget.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtWidgets\QWidget \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\algorithmfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compatibility.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sched.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sched.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\time.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\equally_split.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find_selectors.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stl_algo.h \
@@ -544,31 +544,31 @@ moc_widget.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtWidgets\QWidget \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\new_allocator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\random \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cmath \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\math.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\internal_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\syslimits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\page.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\math.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\internal_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\syslimits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\page.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\string \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stringfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\char_traits.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\postypes.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwchar \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wchar.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\siginfo.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wchar.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\siginfo.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\localefwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\c++locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\clocale \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\locale.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\iosfwd \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\ctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\ctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\ostream_insert.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\cxxabi_forced.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\range_access.h \
@@ -576,24 +576,24 @@ moc_widget.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtWidgets\QWidget \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\atomicity.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr-default.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pthread.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\sigcontext.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\unistd.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\select.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysconf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\capability.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pathconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pthread.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\sigcontext.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\unistd.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\select.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\capability.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pathconf.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\atomic_word.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\string_conversions.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cerrno \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno-base.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno-base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\functional_hash.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_string.tcc \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\random.h \
@@ -651,7 +651,7 @@ moc_widget.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtWidgets\QWidget \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_ios.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\locale_facets.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\streambuf_iterator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_inline.h \
@@ -912,31 +912,31 @@ moc_myquickview.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtQuick\QQuickVie
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\parallel.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compiletime_settings.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdio \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdio.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs_elf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\android\api-level.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdint.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_wchar_limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\stddef.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\compiler.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\kernel.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysmacros.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdio.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs_elf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\android\api-level.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdint.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_wchar_limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\stddef.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\compiler.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\kernel.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysmacros.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\types.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdlib \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdlib.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\string.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\malloc.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\alloca.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\strings.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\memory.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdlib.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\string.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\malloc.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\alloca.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\strings.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\memory.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\limits \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\tr1\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\tags.h \
@@ -944,9 +944,9 @@ moc_myquickview.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtQuick\QQuickVie
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\algorithmfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compatibility.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sched.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sched.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\time.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\equally_split.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find_selectors.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stl_algo.h \
@@ -964,31 +964,31 @@ moc_myquickview.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtQuick\QQuickVie
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\new_allocator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\random \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cmath \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\math.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\internal_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\syslimits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\page.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\math.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\internal_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\syslimits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\page.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\string \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stringfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\char_traits.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\postypes.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwchar \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wchar.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\siginfo.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wchar.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\siginfo.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\localefwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\c++locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\clocale \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\locale.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\iosfwd \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\ctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\ctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\ostream_insert.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\cxxabi_forced.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\range_access.h \
@@ -996,24 +996,24 @@ moc_myquickview.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtQuick\QQuickVie
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\atomicity.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr-default.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pthread.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\sigcontext.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\unistd.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\select.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysconf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\capability.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pathconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pthread.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\sigcontext.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\unistd.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\select.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\capability.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pathconf.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\atomic_word.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\string_conversions.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cerrno \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno-base.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno-base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\functional_hash.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_string.tcc \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\random.h \
@@ -1071,7 +1071,7 @@ moc_myquickview.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtQuick\QQuickVie
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_ios.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\locale_facets.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\streambuf_iterator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_inline.h \
@@ -1214,10 +1214,10 @@ moc_myquickview.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtQuick\QQuickVie
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\profile\multimap.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qopengl.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\qt_windows.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\GLES2\gl2.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\GLES2\gl2platform.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\KHR\khrplatform.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\inttypes.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\GLES2\gl2.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\GLES2\gl2platform.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\KHR\khrplatform.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\inttypes.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qopengles2ext.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qopenglext.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qwindow.h \
@@ -1348,31 +1348,31 @@ moc_fileio.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\QObject \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\parallel.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compiletime_settings.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdio \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdio.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs_elf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\android\api-level.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdint.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_wchar_limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\stddef.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\compiler.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\kernel.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysmacros.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdio.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs_elf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\android\api-level.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdint.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_wchar_limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\stddef.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\compiler.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\kernel.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysmacros.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\types.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdlib \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdlib.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\string.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\malloc.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\alloca.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\strings.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\memory.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdlib.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\string.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\malloc.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\alloca.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\strings.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\memory.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\limits \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\tr1\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\tags.h \
@@ -1380,9 +1380,9 @@ moc_fileio.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\QObject \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\algorithmfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compatibility.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sched.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sched.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\time.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\equally_split.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find_selectors.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stl_algo.h \
@@ -1400,31 +1400,31 @@ moc_fileio.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\QObject \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\new_allocator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\random \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cmath \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\math.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\internal_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\syslimits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\page.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\math.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\internal_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\syslimits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\page.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\string \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stringfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\char_traits.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\postypes.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwchar \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wchar.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\siginfo.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wchar.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\siginfo.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\localefwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\c++locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\clocale \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\locale.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\iosfwd \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\ctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\ctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\ostream_insert.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\cxxabi_forced.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\range_access.h \
@@ -1432,24 +1432,24 @@ moc_fileio.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\QObject \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\atomicity.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr-default.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pthread.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\sigcontext.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\unistd.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\select.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysconf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\capability.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pathconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pthread.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\sigcontext.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\unistd.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\select.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\capability.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pathconf.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\atomic_word.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\string_conversions.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cerrno \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno-base.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno-base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\functional_hash.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_string.tcc \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\random.h \
@@ -1507,7 +1507,7 @@ moc_fileio.cpp: C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\QObject \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_ios.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\locale_facets.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\streambuf_iterator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_inline.h \
@@ -1743,31 +1743,31 @@ main.obj: main.cpp widget.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\parallel.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compiletime_settings.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdio \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdio.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs_elf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\android\api-level.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdint.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_wchar_limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\stddef.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\compiler.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\kernel.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysmacros.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdio.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs_elf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\android\api-level.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdint.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_wchar_limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\stddef.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\compiler.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\kernel.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysmacros.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\types.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdlib \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdlib.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\string.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\malloc.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\alloca.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\strings.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\memory.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdlib.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\string.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\malloc.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\alloca.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\strings.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\memory.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\limits \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\tr1\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\tags.h \
@@ -1775,9 +1775,9 @@ main.obj: main.cpp widget.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\algorithmfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compatibility.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sched.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sched.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\time.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\equally_split.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find_selectors.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stl_algo.h \
@@ -1795,31 +1795,31 @@ main.obj: main.cpp widget.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\new_allocator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\random \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cmath \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\math.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\internal_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\syslimits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\page.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\math.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\internal_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\syslimits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\page.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\string \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stringfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\char_traits.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\postypes.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwchar \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wchar.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\siginfo.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wchar.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\siginfo.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\localefwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\c++locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\clocale \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\locale.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\iosfwd \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\ctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\ctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\ostream_insert.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\cxxabi_forced.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\range_access.h \
@@ -1827,24 +1827,24 @@ main.obj: main.cpp widget.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\atomicity.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr-default.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pthread.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\sigcontext.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\unistd.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\select.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysconf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\capability.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pathconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pthread.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\sigcontext.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\unistd.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\select.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\capability.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pathconf.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\atomic_word.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\string_conversions.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cerrno \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno-base.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno-base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\functional_hash.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_string.tcc \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\random.h \
@@ -1902,7 +1902,7 @@ main.obj: main.cpp widget.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_ios.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\locale_facets.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\streambuf_iterator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_inline.h \
@@ -2122,10 +2122,10 @@ main.obj: main.cpp widget.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtQuick\qtquickglobal.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qopengl.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\qt_windows.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\GLES2\gl2.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\GLES2\gl2platform.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\KHR\khrplatform.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\inttypes.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\GLES2\gl2.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\GLES2\gl2platform.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\KHR\khrplatform.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\inttypes.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qopengles2ext.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qopenglext.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qwindow.h \
@@ -2157,10 +2157,10 @@ main.obj: main.cpp widget.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\qsequentialanimationgroup.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\qtextcodec.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\qendian.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\byteswap.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\endian.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\endian.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\endian.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\byteswap.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\endian.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\endian.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\endian.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\qlibraryinfo.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\qdatetime.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\qnumeric.h \
@@ -2385,31 +2385,31 @@ widget.obj: widget.cpp widget.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\parallel.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compiletime_settings.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdio \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdio.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs_elf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\android\api-level.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdint.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_wchar_limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\stddef.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\compiler.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\kernel.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysmacros.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdio.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs_elf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\android\api-level.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdint.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_wchar_limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\stddef.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\compiler.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\kernel.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysmacros.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\types.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdlib \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdlib.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\string.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\malloc.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\alloca.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\strings.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\memory.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdlib.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\string.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\malloc.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\alloca.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\strings.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\memory.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\limits \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\tr1\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\tags.h \
@@ -2417,9 +2417,9 @@ widget.obj: widget.cpp widget.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\algorithmfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compatibility.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sched.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sched.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\time.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\equally_split.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find_selectors.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stl_algo.h \
@@ -2437,31 +2437,31 @@ widget.obj: widget.cpp widget.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\new_allocator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\random \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cmath \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\math.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\internal_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\syslimits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\page.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\math.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\internal_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\syslimits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\page.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\string \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stringfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\char_traits.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\postypes.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwchar \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wchar.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\siginfo.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wchar.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\siginfo.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\localefwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\c++locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\clocale \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\locale.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\iosfwd \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\ctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\ctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\ostream_insert.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\cxxabi_forced.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\range_access.h \
@@ -2469,24 +2469,24 @@ widget.obj: widget.cpp widget.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\atomicity.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr-default.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pthread.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\sigcontext.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\unistd.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\select.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysconf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\capability.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pathconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pthread.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\sigcontext.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\unistd.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\select.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\capability.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pathconf.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\atomic_word.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\string_conversions.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cerrno \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno-base.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno-base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\functional_hash.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_string.tcc \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\random.h \
@@ -2544,7 +2544,7 @@ widget.obj: widget.cpp widget.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_ios.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\locale_facets.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\streambuf_iterator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_inline.h \
@@ -2804,31 +2804,31 @@ myquickview.obj: myquickview.cpp myquickview.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\parallel.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compiletime_settings.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdio \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdio.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs_elf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\android\api-level.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdint.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_wchar_limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\stddef.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\compiler.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\kernel.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysmacros.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdio.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs_elf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\android\api-level.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdint.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_wchar_limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\stddef.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\compiler.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\kernel.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysmacros.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\types.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdlib \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdlib.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\string.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\malloc.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\alloca.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\strings.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\memory.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdlib.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\string.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\malloc.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\alloca.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\strings.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\memory.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\limits \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\tr1\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\tags.h \
@@ -2836,9 +2836,9 @@ myquickview.obj: myquickview.cpp myquickview.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\algorithmfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compatibility.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sched.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sched.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\time.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\equally_split.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find_selectors.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stl_algo.h \
@@ -2856,31 +2856,31 @@ myquickview.obj: myquickview.cpp myquickview.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\new_allocator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\random \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cmath \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\math.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\internal_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\syslimits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\page.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\math.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\internal_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\syslimits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\page.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\string \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stringfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\char_traits.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\postypes.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwchar \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wchar.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\siginfo.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wchar.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\siginfo.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\localefwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\c++locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\clocale \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\locale.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\iosfwd \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\ctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\ctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\ostream_insert.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\cxxabi_forced.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\range_access.h \
@@ -2888,24 +2888,24 @@ myquickview.obj: myquickview.cpp myquickview.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\atomicity.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr-default.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pthread.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\sigcontext.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\unistd.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\select.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysconf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\capability.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pathconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pthread.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\sigcontext.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\unistd.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\select.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\capability.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pathconf.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\atomic_word.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\string_conversions.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cerrno \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno-base.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno-base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\functional_hash.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_string.tcc \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\random.h \
@@ -2963,7 +2963,7 @@ myquickview.obj: myquickview.cpp myquickview.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_ios.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\locale_facets.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\streambuf_iterator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_inline.h \
@@ -3106,10 +3106,10 @@ myquickview.obj: myquickview.cpp myquickview.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\profile\multimap.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qopengl.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtCore\qt_windows.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\GLES2\gl2.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\GLES2\gl2platform.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\KHR\khrplatform.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\inttypes.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\GLES2\gl2.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\GLES2\gl2platform.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\KHR\khrplatform.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\inttypes.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qopengles2ext.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qopenglext.h \
 		C:\Qt\Qt5.2.1\5.2.1\android_armv7\include\QtGui\qwindow.h \
@@ -3239,31 +3239,31 @@ fileio.obj: fileio.cpp fileio.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\parallel.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compiletime_settings.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdio \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdio.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\cdefs_elf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\android\api-level.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdint.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\_wchar_limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\stddef.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\compiler.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\posix_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\kernel.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysmacros.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdio.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\cdefs_elf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\android\api-level.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdint.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\_wchar_limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\stddef.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\compiler.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\posix_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\kernel.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysmacros.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\types.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdlib \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\stdlib.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\string.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\malloc.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\alloca.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\strings.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\memory.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\stdlib.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\string.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\malloc.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\alloca.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\strings.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\memory.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\limits \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\tr1\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\tags.h \
@@ -3271,9 +3271,9 @@ fileio.obj: fileio.cpp fileio.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\algorithmfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\compatibility.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sched.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sched.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\time.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\equally_split.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\parallel\find_selectors.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stl_algo.h \
@@ -3291,31 +3291,31 @@ fileio.obj: fileio.cpp fileio.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\new_allocator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\random \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cmath \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\math.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\internal_types.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\machine\limits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\syslimits.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\page.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\math.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\internal_types.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\machine\limits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\syslimits.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\page.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\string \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\stringfwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\char_traits.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\postypes.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwchar \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wchar.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\time.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\siginfo.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wchar.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\time.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\siginfo.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\siginfo.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cstdint \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\localefwd.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\c++locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\clocale \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\locale.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\locale.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\iosfwd \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\ctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\ctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\ostream_insert.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\cxxabi_forced.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\range_access.h \
@@ -3323,24 +3323,24 @@ fileio.obj: fileio.cpp fileio.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\atomicity.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\gthr-default.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pthread.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\signal.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\sigcontext.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\unistd.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\select.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\sys\sysconf.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\capability.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\pathconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pthread.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\signal.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\sigcontext.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\unistd.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\select.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\sys\sysconf.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\capability.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\pathconf.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\atomic_word.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\ext\string_conversions.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cerrno \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\linux\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno.h \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\asm-generic\errno-base.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\linux\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\asm-generic\errno-base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\functional_hash.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_string.tcc \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\random.h \
@@ -3398,7 +3398,7 @@ fileio.obj: fileio.cpp fileio.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\basic_ios.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\locale_facets.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\cwctype \
-		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-18\arch-arm\usr\include\wctype.h \
+		..\..\..\..\..\AndroidForQt\android-ndk-r9b\platforms\android-9\arch-arm\usr\include\wctype.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_base.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\include\bits\streambuf_iterator.h \
 		..\..\..\..\..\AndroidForQt\android-ndk-r9b\sources\cxx-stl\gnu-libstdc++\4.8\libs\armeabi-v7a\include\bits\ctype_inline.h \

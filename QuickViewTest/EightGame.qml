@@ -21,6 +21,7 @@ Item {
         id:errorTip
         anchors.centerIn: parent
         opacity:0.0
+        z:10
     }
 
     Label{
@@ -64,6 +65,9 @@ Item {
         anchors.top: rodomView.bottom
         anchors.topMargin:40
         onSignalMatchSuccuss: {
+            stopTimer();
+            rodomView.getOnlyNum(9);
+            gameView.getOnlyNum(9)
             errorTip.startAnimation("恭喜获得奖励")
         }
     }

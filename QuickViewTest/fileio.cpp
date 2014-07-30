@@ -43,8 +43,6 @@ bool FileIO::write(const QString& data)
 
     QTextStream out(&file);
     out << data;
-
     file.close();
-
     return true;
 }
